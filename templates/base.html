@@ -1,0 +1,43 @@
+{% load static %}
+<html>
+    <head>
+        <!-- <title>Index | home</title> -->
+        <title>{Index | home}</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    </head>
+    
+    <body>
+        <h2></h2>
+    <div class="container">
+        {% include "navbar.html" %}
+        <div class="row">
+            <div class="col-md-6">
+                <h1>BIODATA DIRI{{href}}</h1>
+            
+            <table style="font-family:Lucida Bright;">
+                <tr>
+                    <td>Nama      :    </td>
+                    <td>Hasna Zahidah</td>
+                </tr>
+                <tr>
+                    <td>NPM       :     </td>
+                    <td>1204068</td>
+                </tr> 
+                <tr>
+                      <td>Jurusan       :</td>
+                      <td>D4 Teknik Informatika</td>
+                </tr>
+                <tr>
+                      <td>Asal Kota :     </td>
+                      <td>Bogor</td>
+                </tr>
+                
+          </table>
+        </div>
+        </div>
+        <div class="col-md-6"></div>
+            <img style="width:30%" src="{%static 'img/hasnacantik.jpeg'%}" alt="">    
+        
+    </div>
+</body>
+</html>
