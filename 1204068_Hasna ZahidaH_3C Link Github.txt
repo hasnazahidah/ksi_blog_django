@@ -1,0 +1,8 @@
+TUGAS BLOG KSI DJANGO
+
+NPM : 1204068
+Nama : Hasna Zahidah
+Kelas : 3C - D4 Teknik Informatika
+
+link github : 
+git@github.com:hasnazahidah/ksi_blog_django.git

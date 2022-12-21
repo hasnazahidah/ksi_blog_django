@@ -1,0 +1,16 @@
+<form method='post'>
+    {% csrf_token %}
+    {{classform.namac.label_tag}} <br>
+    {{classform.namac}}
+    <table>{{classform.as_table}}</table>
+    <label for="nama">Nama: </label>
+    <input type="text" name="nama" id="nama">
+    <br>
+    <label for="alamat">Alamat: </label>
+    <input type="text" name="alamat" id="alamat">
+    <br>
+    <button type="Submit">Submit</button>
+</form>
+
+<h2>{{nama}} {{namac}}</h2>
+<h2>{{alamat}} {{alamatc}}</h2>

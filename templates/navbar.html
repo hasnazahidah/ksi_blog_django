@@ -14,13 +14,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-    <a class="nav-link active" aria-current="page"
-href="/">Home</a>
-<a class="nav-link" href="/blog">Blog</a>
-<a class="nav-link" href="/blog/recent">Recent</a>
-<a class="nav-link disabled" href="#" tabindex="-1" ariadisabled="true"
->Disabled</a
->
+<ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+        <a class="nav-link" href="{% url "index" %}" title="">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url "blog:index" %}" title="">Blog</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url "about:index" %}">About</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url "dinamis" year="2020" %}" title="">2020</a>
+    </li>
+</ul>
 </div>
 </div>
 </div>
