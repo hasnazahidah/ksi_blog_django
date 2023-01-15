@@ -20,8 +20,8 @@ class Post(models.Model):
     slug = models.SlugField(blank=True, editable=False)
     
     def save(self):
-        self.slug = slugify(self.nama)
+        self.slug = slugify(self.title)
         super(Post, self).save()
 
-    def _str_(self):
-        return "{}".format(self.nama)
+    def __str__(self):
+        return "{}".format(self.title)

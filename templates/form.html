@@ -1,5 +1,18 @@
 <form method='post'>
     {% csrf_token %}
+    {{classform.title.label}}<br>
+    {{classform.title}}<br>
+    {{classform.body.label}}<br>
+    {{classform.body}}<br>
+    {{classform.email.label}}<br>
+    {{classform.email}}<br>
+
+    <button type="submit">Kirim</button>
+</form>
+
+
+<!-- <form method='post'>
+    {% csrf_token %}
     {{classform.namac.label_tag}} <br>
     {{classform.namac}}
     <table>{{classform.as_table}}</table>
@@ -13,4 +26,4 @@
 </form>
 
 <h2>{{nama}} {{namac}}</h2>
-<h2>{{alamat}} {{alamatc}}</h2>
+<h2>{{alamat}} {{alamatc}}</h2> -->
